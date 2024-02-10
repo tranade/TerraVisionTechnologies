@@ -30,7 +30,7 @@ model = load_model('soil.h5')
 ENDPOINT_COMPLETIONS = "https://api.openai.com/v1/chat/completions"
 
 # Global variables
-API_KEY = "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"
+API_KEY = input("Enter API key:")
 
 def classify_images(image_fp, model):
     classes = ['Gravel', 'Sand', 'Silt']
